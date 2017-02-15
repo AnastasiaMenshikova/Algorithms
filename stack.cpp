@@ -4,8 +4,9 @@
 using namespace std;
 
 void menu()
-{
-	int a, mn;
+{	
+	int mn, data, range, kol, error;
+	Stack a;
 	Stack::iterater iter;
 
 
@@ -26,6 +27,7 @@ void menu()
 		{
 		case 1:
 		{
+			system("cls");
 			cout << "Введите число в стек:" << endl;
 			cin >> a;
 			if (isEmpty(top) == 0)
@@ -42,30 +44,41 @@ void menu()
 		}
 		case 2:
 		{
-			if (isEmpty(top) == NULL)
-			{
-				system("cls");
-				cout << "Элементов в стеке нет" << endl;
-				cout << endl;
-				cout << endl;
-				cout << endl;
-			}
-			else
-			{
-				pop(&top);
-				system("cls");
-				cout << endl;
-				cout << endl;
-				cout << endl;
-			}
-			break;
-
 
 		}
 
 
 		case 3:
 		{
+			system("cls");
+			if (isEmpty(top) == NULL)
+			{
+				system("cls");
+				cout << "Элементов в стеке нет" << endl;
+
+			}
+			else
+			{
+				pop(&top);
+				system("cls");
+				cout << "Элемент был успешно удалён" << endl;
+
+			}
+			break;
+
+
+		}
+		case 4:
+		{
+		}
+		
+		case 5
+		{
+		}
+		
+		case 6
+		{
+			system("cls");
 			if (isEmpty(top) == 0)
 			{
 				system("cls");
@@ -76,16 +89,18 @@ void menu()
 			}
 			else
 			{
-				system("cls");
-				print(&top);
-				cout << endl;
-				cout << endl;
-				cout << endl;
+				cout << "Элемент был успешно удалён" << endl;
 			}
+			system("cls");
 			break;
 		}
+	
+		case 7
+		{
 		}
-		if (mn<0 || mn>3)
+			
+		}
+		if (mn<0 || mn>7)
 			system("cls");
 	} while (mn != 0);
 }
