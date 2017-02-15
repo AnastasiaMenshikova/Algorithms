@@ -1,4 +1,1 @@
-# Algorithms
-some faster algorithms
-
-file Fibonacci_mod.cpp  realize  F[i]+F[i+1] mod 10;
+# code
